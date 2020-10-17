@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,7 @@
 		5A862783253B9253005F9BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A862781253B9253005F9BDB /* Main.storyboard */; };
 		5A862785253B9255005F9BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A862784253B9255005F9BDB /* Assets.xcassets */; };
 		5A862788253B9255005F9BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A862786253B9255005F9BDB /* LaunchScreen.storyboard */; };
-		5A862793253B9255005F9BDB /* CStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A862792253B9255005F9BDB /* CStudentsTests.swift */; };
-		5A86279E253B9255005F9BDB /* CStudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86279D253B9255005F9BDB /* CStudentsUITests.swift */; };
+		5A8627C0253B9468005F9BDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A8627BF253B9468005F9BDB /* GoogleService-Info.plist */; };
 		DF403E4E11AF3D9AE0C4808A /* Pods_CStudents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B52AB13077A937591BEFA /* Pods_CStudents.framework */; };
 		E3A6FE99D9813C0C697002EB /* Pods_CStudents_CStudentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F34A37F72736C3C2FE42373 /* Pods_CStudents_CStudentsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,11 +50,8 @@
 		5A862787253B9255005F9BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A862789253B9255005F9BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A86278E253B9255005F9BDB /* CStudentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CStudentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A862792253B9255005F9BDB /* CStudentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CStudentsTests.swift; sourceTree = "<group>"; };
-		5A862794253B9255005F9BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A862799253B9255005F9BDB /* CStudentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CStudentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A86279D253B9255005F9BDB /* CStudentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CStudentsUITests.swift; sourceTree = "<group>"; };
-		5A86279F253B9255005F9BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8627BF253B9468005F9BDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		672085D44B93DDA93557B9F8 /* Pods-CStudents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CStudents.release.xcconfig"; path = "Target Support Files/Pods-CStudents/Pods-CStudents.release.xcconfig"; sourceTree = "<group>"; };
 		765B52AB13077A937591BEFA /* Pods_CStudents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CStudents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F2CA5B9D0DF438F7248EB3 /* Pods_CStudentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CStudentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				5A86277A253B9253005F9BDB /* CStudents */,
-				5A862791253B9255005F9BDB /* CStudentsTests */,
-				5A86279C253B9255005F9BDB /* CStudentsUITests */,
 				5A862779253B9253005F9BDB /* Products */,
 				F790F7106B4A4BD2A1837388 /* Pods */,
 				A52E3F452A59530AF112A3D1 /* Frameworks */,
@@ -123,26 +117,9 @@
 				5A862784253B9255005F9BDB /* Assets.xcassets */,
 				5A862786253B9255005F9BDB /* LaunchScreen.storyboard */,
 				5A862789253B9255005F9BDB /* Info.plist */,
+				5A8627BF253B9468005F9BDB /* GoogleService-Info.plist */,
 			);
 			path = CStudents;
-			sourceTree = "<group>";
-		};
-		5A862791253B9255005F9BDB /* CStudentsTests */ = {
-			isa = PBXGroup;
-			children = (
-				5A862792253B9255005F9BDB /* CStudentsTests.swift */,
-				5A862794253B9255005F9BDB /* Info.plist */,
-			);
-			path = CStudentsTests;
-			sourceTree = "<group>";
-		};
-		5A86279C253B9255005F9BDB /* CStudentsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5A86279D253B9255005F9BDB /* CStudentsUITests.swift */,
-				5A86279F253B9255005F9BDB /* Info.plist */,
-			);
-			path = CStudentsUITests;
 			sourceTree = "<group>";
 		};
 		A52E3F452A59530AF112A3D1 /* Frameworks */ = {
@@ -165,7 +142,6 @@
 				BD5B0C19D6811B082B7A5A8B /* Pods-CStudentsTests.debug.xcconfig */,
 				F91A6EEB7CF6B5D263A44404 /* Pods-CStudentsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A862788253B9255005F9BDB /* LaunchScreen.storyboard in Resources */,
+				5A8627C0253B9468005F9BDB /* GoogleService-Info.plist in Resources */,
 				5A862785253B9255005F9BDB /* Assets.xcassets in Resources */,
 				5A862783253B9253005F9BDB /* Main.storyboard in Resources */,
 			);
@@ -417,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A862793253B9255005F9BDB /* CStudentsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +401,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A86279E253B9255005F9BDB /* CStudentsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

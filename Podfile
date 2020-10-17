@@ -8,6 +8,7 @@ target 'CStudents' do
   # Pods for CStudents
   pod "Alamofire"
   pod "SwiftyJSON"
+  pod 'Firebase/Analytics'
 
   target 'CStudentsTests' do
     inherit! :search_paths
