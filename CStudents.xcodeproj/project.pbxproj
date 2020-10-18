@@ -11,6 +11,7 @@
 		5A562452253BCAD500E7B423 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562451253BCAD500E7B423 /* DataManager.swift */; };
 		5A56251D253C030400E7B423 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56251C253C030400E7B423 /* Cells.swift */; };
 		5A562525253C043500E7B423 /* ConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562524253C043500E7B423 /* ConnectionsViewController.swift */; };
+		5A562548253C17A400E7B423 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562547253C17A400E7B423 /* SignInViewController.swift */; };
 		5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277B253B9253005F9BDB /* AppDelegate.swift */; };
 		5A86277E253B9253005F9BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277D253B9253005F9BDB /* SceneDelegate.swift */; };
 		5A862780253B9253005F9BDB /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277F253B9253005F9BDB /* LaunchViewController.swift */; };
@@ -53,6 +54,7 @@
 		5A562451253BCAD500E7B423 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5A56251C253C030400E7B423 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		5A562524253C043500E7B423 /* ConnectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsViewController.swift; sourceTree = "<group>"; };
+		5A562547253C17A400E7B423 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5A862778253B9253005F9BDB /* CStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A86277B253B9253005F9BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A86277D253B9253005F9BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				5A86277F253B9253005F9BDB /* LaunchViewController.swift */,
+				5A562547253C17A400E7B423 /* SignInViewController.swift */,
 				5A8627E9253BA80F005F9BDB /* CardViewController.swift */,
 				5A562524253C043500E7B423 /* ConnectionsViewController.swift */,
 			);
@@ -216,6 +219,7 @@
 				5A862775253B9253005F9BDB /* Frameworks */,
 				5A862776253B9253005F9BDB /* Resources */,
 				A8B3A155481543832A246D4B /* [CP] Embed Pods Frameworks */,
+				16C14B7CA180243CDC41A9DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +258,7 @@
 				5A862796253B9255005F9BDB /* Frameworks */,
 				5A862797253B9255005F9BDB /* Resources */,
 				758F1B423332E5E3D818A399 /* [CP] Embed Pods Frameworks */,
+				FD0698BCB92969DB91C8F088 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -336,6 +341,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16C14B7CA180243CDC41A9DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CStudents/Pods-CStudents-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CStudents/Pods-CStudents-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CStudents/Pods-CStudents-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4226CAF85BBA2AFEB37C53A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +458,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD0698BCB92969DB91C8F088 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CStudents-CStudentsUITests/Pods-CStudents-CStudentsUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CStudents-CStudentsUITests/Pods-CStudents-CStudentsUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CStudents-CStudentsUITests/Pods-CStudents-CStudentsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -448,6 +487,7 @@
 				5A8627EA253BA80F005F9BDB /* CardViewController.swift in Sources */,
 				5A8627F0253BA853005F9BDB /* ProfileCardModel.swift in Sources */,
 				5A862780253B9253005F9BDB /* LaunchViewController.swift in Sources */,
+				5A562548253C17A400E7B423 /* SignInViewController.swift in Sources */,
 				5ACB392E253BB282007B418A /* CardOverlay.swift in Sources */,
 				5ACB3933253BB2EC007B418A /* Extensions.swift in Sources */,
 				5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */,

@@ -9,19 +9,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="s3E-nx-JQu">
             <objects>
-                <viewController id="xsp-Rw-ffs" sceneMemberID="viewController">
+                <viewController id="xsp-Rw-ffs" customClass="SignInViewController" customModule="CStudents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kAO-cP-vkj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqv-Bn-g9S">
-                                <rect key="frame" x="20" y="403" width="374" height="90"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQc-cb-Mb0">
+                                <rect key="frame" x="78" y="116" width="259" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Record"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a3j-5g-oog" customClass="GIDSignInButton">
+                                <rect key="frame" x="71" y="571" width="272" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GtR-fd-aC8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1m-tm-Gux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3291.304347826087" y="567.1875"/>
+            <point key="canvasLocation" x="-978" y="121"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -43,11 +50,12 @@
                     </view>
                     <connections>
                         <segue destination="aoo-Mf-gZa" kind="presentation" identifier="showApp" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="LNs-1u-0vb"/>
+                        <segue destination="xsp-Rw-ffs" kind="presentation" identifier="showLogin" modalPresentationStyle="overFullScreen" id="khy-S3-i6H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="121"/>
+            <point key="canvasLocation" x="-172" y="-642"/>
         </scene>
         <!--Connections View Controller-->
         <scene sceneID="Ow4-nh-Tnd">
@@ -190,6 +198,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ib-ma-rkp">
                                 <rect key="frame" x="20" y="124" width="374" height="616"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbI-YB-zeB">
+                                <rect key="frame" x="355" y="67" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="giu-eq-kc3" eventType="touchUpInside" id="V01-v2-Eom"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="44c-af-700"/>
                         <color key="backgroundColor" name="Primary"/>

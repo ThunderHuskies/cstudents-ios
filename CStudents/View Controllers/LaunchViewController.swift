@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LaunchViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
-        performSegue(withIdentifier: "showApp", sender: self)
+        if Auth.auth().currentUser != nil {
+            // We're logged in
+            performSegue(withIdentifier: "showApp", sender: self)
+        } else {
+            // Show login
+            performSegue(withIdentifier: "showLogin", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

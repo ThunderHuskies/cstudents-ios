@@ -7,9 +7,13 @@
 
 import Foundation
 import UIKit
+import FirebaseFirestore
 
 /// Handles all networking functions and communicates with Cloud Firestore API
 class DataManager {
+    
+    let db = Firestore.firestore()
+    
     init () {}
     
     public static func getSampleMatches() -> [ProfileCardModel] {

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Shuffle_iOS
+import FirebaseAuth
 
 class CardViewController: UIViewController {
     
@@ -32,6 +33,11 @@ class CardViewController: UIViewController {
                          right: cardView.safeAreaLayoutGuide.rightAnchor)
         cardStack.delegate = self
         cardStack.dataSource = self
+    }
+    
+    @IBAction func logoutClicked(_ sender: Any!) {
+        // TODO: Handle thrown errors
+        try! Auth.auth().signOut()
     }
 }
 
