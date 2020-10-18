@@ -55,7 +55,7 @@ class CardOverlay: UIView {
   }
 
   private func createRightOverlay() {
-    let rightTextView = CardOverlayLabelView(withTitle: "CONNECT",
+    let rightTextView = CardOverlayLabelView(withTitle: "+",
                                                    color: .white,
                                                    rotation: -CGFloat.pi / 10)
     addSubview(rightTextView)
@@ -78,7 +78,7 @@ private class CardOverlayLabelView: UIView {
     super.init(frame: CGRect.zero)
     layer.borderColor = color.cgColor
     layer.borderWidth = 4
-    layer.cornerRadius = 4
+    layer.cornerRadius = 15//self.frame.size.width / 2
     transform = CGAffineTransform(rotationAngle: rotation)
 
     addSubview(titleLabel)
@@ -102,8 +102,8 @@ extension NSAttributedString.Key {
 
   static var overlayAttributes: [NSAttributedString.Key: Any] = [
     // swiftlint:disable:next force_unwrapping
-    NSAttributedString.Key.font: UIFont(name: "HelveticaNeue-Bold", size: 42)!,
-    NSAttributedString.Key.kern: 5.0
+    NSAttributedString.Key.font: UIFont(name: "AvenirNext-DemiBold", size: 42)!,
+    // NSAttributedString.Key.kern: 5.0
   ]
 }
 

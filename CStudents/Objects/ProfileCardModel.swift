@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 
 class ProfileCardModel {
-    var name: String?
-    var schoolName: String?
-    var major: String?
-    var year: String?
-    var image: UIImage?
+    var name: String = ""
+    var schoolName: String = ""
+    var major: String = ""
+    var year: String = ""
+    var image: UIImage? = nil
     
     init() {}
     

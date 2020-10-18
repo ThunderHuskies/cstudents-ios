@@ -47,7 +47,7 @@ extension CardViewController: SwipeCardStackDelegate, SwipeCardStackDataSource {
         let model = cardModels[index]
         card.content = CardContentView(withImage: model.image)
         card.footerHeight = 150
-        card.footer = CardFooterView(withTitle: "\(model.name!)", subtitle: model.major, body: model.schoolName! + " ● " +  model.year!)
+        card.footer = CardFooterView(withTitle: "\(model.name)", subtitle: model.major, body: model.schoolName + " ● " +  model.year)
         return card
     }
 
