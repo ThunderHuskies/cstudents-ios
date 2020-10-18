@@ -12,6 +12,14 @@ target 'CStudents' do
   pod 'Shuffle-iOS'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Eureka'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'Firebase/Storage'
+  pod 'NVActivityIndicatorView/Extended'
+  pod 'NVActivityIndicatorView'
+  pod 'Alertift'
   
   target 'CStudentsTests' do
     inherit! :search_paths
