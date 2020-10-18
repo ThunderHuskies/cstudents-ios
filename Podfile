@@ -9,6 +9,7 @@ target 'CStudents' do
   pod "Alamofire"
   pod "SwiftyJSON"
   pod 'Firebase/Analytics'
+  pod 'Shuffle-iOS'
 
   target 'CStudentsTests' do
     inherit! :search_paths
