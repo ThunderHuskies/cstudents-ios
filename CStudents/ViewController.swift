@@ -18,19 +18,20 @@ class ViewController: UIViewController {
     
 // Sample new document (data) with generated ID
     // just need to call this to ensure that there is something 
-    func addData() {
-        var ref: DocumentReference? = nil
-        ref = db.collection("users").addDocument(data: [
-            "name": "name",
-            "age":0,
-            "school": "The University of British Columbia",
-        ]) { err in
-            if let err = err {
-                print("error: \(err) ")
-            } else {
-                print("added: \(ref!.documentID)")
-            }
-        }
+   @IBAction func addData() {
+    let collection = Firestore.firestore().collection("users")
+    
+    let user = User(
+        name: "Charlie",
+        age: 20,
+        school: "school",
+        major: "major",
+        courses: ["adsf", "1s", "asdf"],
+        hobbies: "cheese"
+    )
+    collection.addDocument(data: user.dictionary)
+    
+    
     }
 }
 
