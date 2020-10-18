@@ -12,6 +12,11 @@
 		5A56251D253C030400E7B423 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56251C253C030400E7B423 /* Cells.swift */; };
 		5A562525253C043500E7B423 /* ConnectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562524253C043500E7B423 /* ConnectionsViewController.swift */; };
 		5A562548253C17A400E7B423 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562547253C17A400E7B423 /* SignInViewController.swift */; };
+		5A562574253C1F6700E7B423 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562573253C1F6700E7B423 /* EditProfileViewController.swift */; };
+		5A562582253C2D9200E7B423 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562580253C2D9200E7B423 /* ImagePickerController.swift */; };
+		5A562583253C2D9200E7B423 /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562581253C2D9200E7B423 /* ImageRow.swift */; };
+		5A5625B0253C4FFB00E7B423 /* NewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5625AF253C4FFB00E7B423 /* NewProfileViewController.swift */; };
+		5A5625DB253C961F00E7B423 /* ViewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5625DA253C961E00E7B423 /* ViewProfileViewController.swift */; };
 		5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277B253B9253005F9BDB /* AppDelegate.swift */; };
 		5A86277E253B9253005F9BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277D253B9253005F9BDB /* SceneDelegate.swift */; };
 		5A862780253B9253005F9BDB /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277F253B9253005F9BDB /* LaunchViewController.swift */; };
@@ -55,6 +60,11 @@
 		5A56251C253C030400E7B423 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		5A562524253C043500E7B423 /* ConnectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsViewController.swift; sourceTree = "<group>"; };
 		5A562547253C17A400E7B423 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5A562573253C1F6700E7B423 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		5A562580253C2D9200E7B423 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		5A562581253C2D9200E7B423 /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		5A5625AF253C4FFB00E7B423 /* NewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileViewController.swift; sourceTree = "<group>"; };
+		5A5625DA253C961E00E7B423 /* ViewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfileViewController.swift; sourceTree = "<group>"; };
 		5A862778253B9253005F9BDB /* CStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A86277B253B9253005F9BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A86277D253B9253005F9BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +125,24 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		5A56257E253C2D8400E7B423 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB3926253BB282007B418A /* Profile Card */,
+				5A56257F253C2D9200E7B423 /* ImageRow */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		5A56257F253C2D9200E7B423 /* ImageRow */ = {
+			isa = PBXGroup;
+			children = (
+				5A562580253C2D9200E7B423 /* ImagePickerController.swift */,
+				5A562581253C2D9200E7B423 /* ImageRow.swift */,
+			);
+			path = ImageRow;
+			sourceTree = "<group>";
+		};
 		5A86276F253B9253005F9BDB = {
 			isa = PBXGroup;
 			children = (
@@ -142,8 +170,8 @@
 				5A86277D253B9253005F9BDB /* SceneDelegate.swift */,
 				5A8627EE253BA814005F9BDB /* View Controllers */,
 				5A8627F7253BA856005F9BDB /* Objects */,
-				5ACB3926253BB282007B418A /* Profile Card */,
 				5A562450253BCABA00E7B423 /* Managers */,
+				5A56257E253C2D8400E7B423 /* Custom Views */,
 				5ACB3932253BB2EC007B418A /* Extensions.swift */,
 				5A56251C253C030400E7B423 /* Cells.swift */,
 				5A862781253B9253005F9BDB /* Main.storyboard */,
@@ -160,8 +188,11 @@
 			children = (
 				5A86277F253B9253005F9BDB /* LaunchViewController.swift */,
 				5A562547253C17A400E7B423 /* SignInViewController.swift */,
+				5A562573253C1F6700E7B423 /* EditProfileViewController.swift */,
+				5A5625AF253C4FFB00E7B423 /* NewProfileViewController.swift */,
 				5A8627E9253BA80F005F9BDB /* CardViewController.swift */,
 				5A562524253C043500E7B423 /* ConnectionsViewController.swift */,
+				5A5625DA253C961E00E7B423 /* ViewProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -483,11 +514,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ACB392B253BB282007B418A /* CardContentView.swift in Sources */,
+				5A5625DB253C961F00E7B423 /* ViewProfileViewController.swift in Sources */,
 				5A562452253BCAD500E7B423 /* DataManager.swift in Sources */,
 				5A8627EA253BA80F005F9BDB /* CardViewController.swift in Sources */,
 				5A8627F0253BA853005F9BDB /* ProfileCardModel.swift in Sources */,
+				5A562583253C2D9200E7B423 /* ImageRow.swift in Sources */,
+				5A5625B0253C4FFB00E7B423 /* NewProfileViewController.swift in Sources */,
 				5A862780253B9253005F9BDB /* LaunchViewController.swift in Sources */,
 				5A562548253C17A400E7B423 /* SignInViewController.swift in Sources */,
+				5A562574253C1F6700E7B423 /* EditProfileViewController.swift in Sources */,
+				5A562582253C2D9200E7B423 /* ImagePickerController.swift in Sources */,
 				5ACB392E253BB282007B418A /* CardOverlay.swift in Sources */,
 				5ACB3933253BB2EC007B418A /* Extensions.swift in Sources */,
 				5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */,

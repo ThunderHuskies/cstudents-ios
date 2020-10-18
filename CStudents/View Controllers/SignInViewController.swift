@@ -8,8 +8,9 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import NVActivityIndicatorView
 
-class SignInViewController: UIViewController, GIDSignInDelegate {
+class SignInViewController: UIViewController, GIDSignInDelegate, NVActivityIndicatorViewable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class SignInViewController: UIViewController, GIDSignInDelegate {
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        if let error = error {
+        if error != nil {
             print("error during google sign in")
             return
         }
@@ -29,12 +30,28 @@ class SignInViewController: UIViewController, GIDSignInDelegate {
         Auth.auth().signIn(with: credential) { (authResult, error) in
             if error != nil {
                 // TODO: Handle authentication failure
-                print(error?.localizedDescription)
+                print(error?.localizedDescription ?? "")
                 return
             }
-            
+            DataManager.clearSavedProfiles()
             // Successful Google Sign-in
-            
+            // Check if this user has created a profile
+            self.startAnimating(type: .circleStrokeSpin, color: .white, backgroundColor: UIColor(named: "Primary")?.withAlphaComponent(0.5))
+            DataManager.checkUserHasProfile { (result) in
+                self.stopAnimating()
+                switch result {
+                case .success(let hasProfile):
+                    if hasProfile {
+                        self.performSegue(withIdentifier: "LoginSuccess", sender: self)
+                    } else {
+                        self.performSegue(withIdentifier: "CreateProfile", sender: self)
+                    }
+                case .failure(let error):
+                    print(error)
+                    self.showNetworkErrorBox()
+                    break
+                }
+            }
         }
     }
 

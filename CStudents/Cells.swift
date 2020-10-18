@@ -19,7 +19,7 @@ class ConnectionCell: UITableViewCell {
     func setup(profile: ProfileCardModel) {
         nameLabel.text = profile.name
         majorLabel.text = profile.major
-        schoolLabel.text = profile.schoolName + " ● " + profile.year
+        schoolLabel.text = profile.schoolName
         pictureView.image = profile.image
     }
     

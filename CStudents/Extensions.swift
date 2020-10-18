@@ -7,6 +7,15 @@
 
 import Foundation
 import UIKit
+import Alertift
+
+extension UIViewController {
+    func showNetworkErrorBox() {
+        Alertift.alert(title: "Oops!", message: "Something went wrong. Please check your network and try again.")
+            .action(.default("Ok"))
+            .show(on: self, completion: nil)
+    }
+}
 
 extension UIView {
 
@@ -48,6 +57,8 @@ extension UIView {
 
             return anchors
   }
+    
+    
 
   @discardableResult
   func anchorToSuperview() -> [NSLayoutConstraint] {

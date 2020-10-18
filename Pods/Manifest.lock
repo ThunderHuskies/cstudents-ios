@@ -213,6 +213,7 @@ PODS:
     - abseil/base/config
     - abseil/meta/type_traits
   - Alamofire (5.2.2)
+  - Alertift (4.1.1)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
@@ -238,6 +239,9 @@ PODS:
   - Firebase/Firestore (6.32.2):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.17.1)
+  - Firebase/Storage (6.32.2):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.9.0)
   - FirebaseAnalytics (6.8.2):
     - FirebaseCore (~> 6.10)
     - FirebaseInstallations (~> 1.6)
@@ -280,6 +284,9 @@ PODS:
     - GoogleUtilities/Environment (~> 6.7)
     - GoogleUtilities/UserDefaults (~> 6.7)
     - PromisesObjC (~> 1.2)
+  - FirebaseStorage (3.9.0):
+    - FirebaseCore (~> 6.10)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (6.8.2):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
@@ -349,25 +356,37 @@ PODS:
     - nanopb/encode (= 1.30906.0)
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
+  - NVActivityIndicatorView (5.0.1):
+    - NVActivityIndicatorView/Base (= 5.0.1)
+  - NVActivityIndicatorView/Base (5.0.1)
+  - NVActivityIndicatorView/Extended (5.0.1):
+    - NVActivityIndicatorView/Base
   - PromisesObjC (1.2.10)
   - Shuffle-iOS (0.4.0)
   - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - Alertift
   - Eureka
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
+  - Firebase/Storage
   - FirebaseFirestoreSwift
   - GoogleSignIn
+  - NVActivityIndicatorView
+  - NVActivityIndicatorView/Extended
   - Shuffle-iOS
   - SwiftyJSON
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
     - abseil
     - Alamofire
+    - Alertift
     - AppAuth
     - BoringSSL-GRPC
     - Eureka
@@ -379,6 +398,7 @@ SPEC REPOS:
     - FirebaseFirestore
     - FirebaseFirestoreSwift
     - FirebaseInstallations
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleSignIn
@@ -389,13 +409,16 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - NVActivityIndicatorView
     - PromisesObjC
     - Shuffle-iOS
     - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Alertift: 950483ca193717cc8bb508a7dbbe34f4af321daf
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Eureka: 859877ab1e85661b6b7e810015d430e937d9cc7d
@@ -407,6 +430,7 @@ SPEC CHECKSUMS:
   FirebaseFirestore: f178b761bf05a890749e4d87095ac5a77f11df2f
   FirebaseFirestoreSwift: 2c46dbc1156db97dc4f6dd798d4f5b57b9c7fab6
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
+  FirebaseStorage: 33b92875a9b556824886cc7a65120c7d2cb3a8d8
   GoogleAppMeasurement: 1a66f478c68ecd6c16ee63ee60c7c3a648e6b337
   GoogleDataTransport: e85fb700c9b027079ce182c3d08e12e0f9618bb4
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
@@ -417,10 +441,12 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  NVActivityIndicatorView: 738e843cb8924e9e4fc3e559d0728031624bf860
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Shuffle-iOS: 87e4d3503475f3d684a375358649911e36fe139f
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f162cc34476398fb3c252f6c6604aad8c0f78cf4
+PODFILE CHECKSUM: 2b7363153f505479cb3234f2279b849174960c13
 
 COCOAPODS: 1.9.1
