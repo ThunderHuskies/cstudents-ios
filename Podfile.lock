@@ -324,6 +324,7 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
+  - Shuffle-iOS (0.4.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -331,6 +332,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Firestore
   - FirebaseFirestoreSwift
+  - Shuffle-iOS
   - SwiftyJSON
 
 SPEC REPOS:
@@ -353,6 +355,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - Shuffle-iOS
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -374,8 +377,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  Shuffle-iOS: 87e4d3503475f3d684a375358649911e36fe139f
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: c17c0e61b7b89090eb216f76d1bb2a511a579cef
+PODFILE CHECKSUM: 9ce1cf2e2cb23e34681d6807dfdfb40500018257
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.9.1

@@ -9,6 +9,7 @@ target 'CStudents' do
   pod "Alamofire"
   pod "SwiftyJSON"
   pod 'Firebase/Analytics'
+  pod 'Shuffle-iOS'
   
   #Pods for Firestore
   pod 'Firebase/Firestore'
