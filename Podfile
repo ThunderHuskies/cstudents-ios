@@ -10,7 +10,11 @@ target 'CStudents' do
   pod "SwiftyJSON"
   pod 'Firebase/Analytics'
   pod 'Shuffle-iOS'
-
+  
+  #Pods for Firestore
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  
   target 'CStudentsTests' do
     inherit! :search_paths
     # Pods for testing
