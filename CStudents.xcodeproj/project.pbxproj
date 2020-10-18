@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E04F82F63E3EE31B55C9D57 /* Pods_CStudentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F2CA5B9D0DF438F7248EB3 /* Pods_CStudentsTests.framework */; };
 		5A562452253BCAD500E7B423 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562451253BCAD500E7B423 /* DataManager.swift */; };
-		5A562462253BF6C100E7B423 /* TransparentTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A562461253BF6C100E7B423 /* TransparentTabBar.swift */; };
 		5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277B253B9253005F9BDB /* AppDelegate.swift */; };
 		5A86277E253B9253005F9BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277D253B9253005F9BDB /* SceneDelegate.swift */; };
 		5A862780253B9253005F9BDB /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86277F253B9253005F9BDB /* LaunchViewController.swift */; };
@@ -50,7 +49,6 @@
 		1290C39CE5D6A31B9E2F6E92 /* Pods-CStudents-CStudentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CStudents-CStudentsUITests.debug.xcconfig"; path = "Target Support Files/Pods-CStudents-CStudentsUITests/Pods-CStudents-CStudentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		42D43DBCDA51880434535B36 /* Pods-CStudents-CStudentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CStudents-CStudentsUITests.release.xcconfig"; path = "Target Support Files/Pods-CStudents-CStudentsUITests/Pods-CStudents-CStudentsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A562451253BCAD500E7B423 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		5A562461253BF6C100E7B423 /* TransparentTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentTabBar.swift; sourceTree = "<group>"; };
 		5A862778253B9253005F9BDB /* CStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A86277B253B9253005F9BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A86277D253B9253005F9BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 				5ACB3926253BB282007B418A /* Profile Card */,
 				5A562450253BCABA00E7B423 /* Managers */,
 				5ACB3932253BB2EC007B418A /* Extensions.swift */,
-				5A562461253BF6C100E7B423 /* TransparentTabBar.swift */,
 				5A862781253B9253005F9BDB /* Main.storyboard */,
 				5A862784253B9255005F9BDB /* Assets.xcassets */,
 				5A862786253B9255005F9BDB /* LaunchScreen.storyboard */,
@@ -449,7 +446,6 @@
 				5ACB3933253BB2EC007B418A /* Extensions.swift in Sources */,
 				5A86277C253B9253005F9BDB /* AppDelegate.swift in Sources */,
 				5A86277E253B9253005F9BDB /* SceneDelegate.swift in Sources */,
-				5A562462253BF6C100E7B423 /* TransparentTabBar.swift in Sources */,
 				5ACB392D253BB282007B418A /* CardFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
