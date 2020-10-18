@@ -19,9 +19,6 @@ class CardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         // CardView Setup
         cardStack = SwipeCardStack()
         cardView.addSubview(cardStack)

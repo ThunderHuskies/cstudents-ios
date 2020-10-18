@@ -8,8 +8,6 @@
 import UIKit
 import Firebase
 
-//intialize Firestore
-let db = Firestore.firestore()
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configure firebase
         FirebaseApp.configure()
+        
+        //intialize Firestore
+        let db = Firestore.firestore()
         return true
     }
 
